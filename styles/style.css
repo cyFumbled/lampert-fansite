@@ -7,6 +7,10 @@
     flex-direction: row;
 }
 
+.auto-margin {
+    margin: auto;
+}
+
 #lampert-image-container {
     display: block;
     width: 40vw;
@@ -27,13 +31,29 @@
 }
 
 #title-container {
-    display: inline-block;
+    display:flex;
     width: 60vw;
     height: 30vh;
 
     margin: auto;
 
     background-color: blue;
+
+    > * > * {
+        margin: 0;
+
+        font-size: 2rem;
+        text-align: center;
+        outline: 2px solid beige;
+    }
+}
+
+#title {
+    font-size: 4rem;
+}
+
+#description {
+    margin-top: 0.5em;
 }
 
 #subpage-buttons-container {
