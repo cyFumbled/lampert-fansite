@@ -1,0 +1,45 @@
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+#lampert-image-container {
+    display: inline-block;
+    width: 40vw;
+    height: 90vh;
+
+    background-color: rgb(25, 80, 62);
+}
+
+#title-container {
+    display: inline-block;
+    width: 60vw;
+    height: 30vh;
+
+    background-color: blue;
+}
+
+#subpage-buttons-container {
+    display: inline-block;
+    width: 60vw;
+    height: 60vh;
+
+    background-color: rgb(17, 128, 126);
+}
+
+#page-footer {
+    display: inline-block;
+    width: 100vw;
+    height: 10vh;
+
+    background-color: rgb(77, 27, 82);
+}
+
+body {
+    margin: 0px;
+    background-color: grey;
+}
