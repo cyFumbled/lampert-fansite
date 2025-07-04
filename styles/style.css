@@ -8,17 +8,30 @@
 }
 
 #lampert-image-container {
-    display: inline-block;
+    display: block;
     width: 40vw;
     height: 90vh;
 
+    overflow: hidden;
+
     background-color: rgb(25, 80, 62);
+}
+
+#lampert-homepage-render {
+    /* These number aren't random, they're based on image size ratio (1:1) and container size.*/
+    height: 72vh;
+    margin-top: 9vh;
+    margin-left: calc((40vw - 72vh) / 2);
+
+    outline: 2px solid beige;
 }
 
 #title-container {
     display: inline-block;
     width: 60vw;
     height: 30vh;
+
+    margin: auto;
 
     background-color: blue;
 }
