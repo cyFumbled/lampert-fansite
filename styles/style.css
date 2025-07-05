@@ -17,7 +17,9 @@
 #lampert-image-container {
     display: block;
     width: 40vw;
-    height: 90vh;
+    min-width: 320px;
+    height: 94vh;
+    min-height: 423px;
 
     overflow: hidden;
 
@@ -36,7 +38,10 @@
 #title-container {
     display:flex;
     width: 60vw;
-    height: 30vh;
+    min-width: 480px;
+    height: 34vh;
+    min-height: 153px;
+    overflow: scroll;
 
     margin: auto;
 
@@ -50,7 +55,7 @@
 }
 
 #title {
-    font-size: 6rem;
+    font-size: 4rem;
     text-align: left;
 }
 
@@ -66,7 +71,9 @@
 #subpage-buttons-container {
     display: flex;
     width: 60vw;
+    min-width: 480px;
     height: 60vh;
+    min-height: 270px;
 
     background-color: rgb(17, 128, 126);
 }
@@ -93,7 +100,9 @@
 #page-footer {
     display: inline-block;
     width: 100vw;
-    height: 10vh;
+    min-width: 800px;
+    height: 6vh;
+    min-height: 27px;
 
     background-color: rgb(77, 27, 82);
 }
