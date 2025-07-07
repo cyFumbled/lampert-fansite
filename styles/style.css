@@ -8,16 +8,20 @@
 
 @font-face {
     font-family: "Ubuntu";
-    src: url('assets/fonts/Ubuntu')
-        format('truetype');
+    src: url('../assets/fonts/Ubuntu/Ubuntu-Regular.ttf');
     font-weight: normal;
 }
 
 @font-face {
     font-family: "Ubuntu";
-    src: url('assets/fonts/Ubuntu/Ubuntu-bold.ttf') 
-        format('truetype'); 
+    src: url('../assets/fonts/Ubuntu/Ubuntu-bold.ttf');
     font-weight: bold;
+}
+
+@font-face {
+    font-family: "Rubik80sFade";
+    src: url('../assets/fonts/Rubik80sFade/Rubik80sFade-Regular.ttf');
+    font-style: "scaled";
 }
 
 .flex-column {
@@ -29,67 +33,43 @@
     margin: auto;
 }
 
-#title-container {
-    display:flex;
-    width: 100vw;
-    min-width: 800px;
-    height: 34vh;
-
-    margin: auto;
-    
-    > * > * {
-        margin: 0;
-        color: var(--primary);
-    }
-}
-
 #title {
+    margin: 3rem auto 0px auto;
+
     color: var(--text);
-    font-family: "Ubuntu";
-    font-weight: bold;
+    font-family: "Rubik80sFade";
+    font-style: "scaled";
     font-size: 6rem;
+    line-height: 1.5em;
     text-align: center;
 }
 
-#description {
-
+#subtitle {
     max-width: 48rem;
-    margin-top: 0.5em;
-    
+    margin: 0px auto 3rem auto;
+
     font-family: "Ubuntu";
     font-weight: normal;
     font-size: 1.2rem;
-    text-align: left;
-}
-
-#subpage-buttons-container {
-    display: flex;
-    width: 100vw;
-    min-width: 800px;
-    height: 60vh;
-    min-height: 270px;
-
-    gap: 16px;
-    overflow: scroll;
+    text-align: center;
+    color: var(--primary);
 }
 
 #subpage-button-grid {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    margin: 3rem auto auto auto;
 
-    max-width: 50%;
-    max-height: 80%;
+    width: min(60rem, 90%);
     gap: 36px 36px;
     justify-content: center;
-    
-    margin: auto;
 }
 
 .subpage-button {
     display: flex;
-    width: 26vh;
-    height: 16vh;
+    width: 16rem;
+    height: 10rem;
     transform: scale(1);
 
     border-radius: 48px;
@@ -105,16 +85,19 @@
 
 #page-footer {
     display: inline-block;
-    width: 100vw;
+    width: 100%;
     min-width: 800px;
     height: 24vh;
     min-height: 108px;
+    margin-top: 4rem;
 
     background-color: var(--secondary);
 }
 
 body {
+    height: 120vh;
     margin: 0px;
+    min-width: 800px;
 
     background-color: var(--background);
 }
