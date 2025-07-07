@@ -6,47 +6,37 @@
     --background: #030509;
 }
 
+@font-face {
+    font-family: "Ubuntu";
+    src: url('assets/fonts/Ubuntu')
+        format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    src: url('assets/fonts/Ubuntu/Ubuntu-bold.ttf') 
+        format('truetype'); 
+    font-weight: bold;
+}
+
 .flex-column {
     display: flex;
     flex-direction: column;
-}
-
-.flex-row {
-    display: flex;
-    flex-direction: row;
 }
 
 .auto-margin {
     margin: auto;
 }
 
-#lampert-image-container {
-    display: block;
-    width: 40vw;
-    min-width: 320px;
-    height: 94vh;
-    min-height: 423px;
-
-    overflow: hidden;
-}
-
-#lampert-homepage-render {
-    /* These number aren't random, they're based on image size ratio (1:1) and container size.*/
-    height: 82vh;
-    margin-top: 6vh;
-    margin-left: calc((40vw - 72vh) / 2);
-}
-
 #title-container {
     display:flex;
-    width: 60vw;
-    min-width: 480px;
+    width: 100vw;
+    min-width: 800px;
     height: 34vh;
-    min-height: 153px;
-    overflow: scroll;
 
     margin: auto;
-
+    
     > * > * {
         margin: 0;
         color: var(--primary);
@@ -55,23 +45,27 @@
 
 #title {
     color: var(--text);
-    font-size: 4rem;
+    font-family: "Ubuntu";
+    font-weight: bold;
+    font-size: 6rem;
     text-align: center;
 }
 
 #description {
 
-    max-width: 40vw;
+    max-width: 48rem;
     margin-top: 0.5em;
     
+    font-family: "Ubuntu";
+    font-weight: normal;
     font-size: 1.2rem;
     text-align: left;
 }
 
 #subpage-buttons-container {
     display: flex;
-    width: 60vw;
-    min-width: 480px;
+    width: 100vw;
+    min-width: 800px;
     height: 60vh;
     min-height: 270px;
 
@@ -84,7 +78,7 @@
     flex-wrap: wrap;
     flex-direction: row;
 
-    max-width: 80%;
+    max-width: 50%;
     max-height: 80%;
     gap: 36px 36px;
     justify-content: center;
@@ -94,8 +88,8 @@
 
 .subpage-button {
     display: flex;
-    width: 28vh;
-    height: 18vh;
+    width: 26vh;
+    height: 16vh;
     transform: scale(1);
 
     border-radius: 48px;
@@ -113,8 +107,8 @@
     display: inline-block;
     width: 100vw;
     min-width: 800px;
-    height: 6vh;
-    min-height: 27px;
+    height: 24vh;
+    min-height: 108px;
 
     background-color: var(--secondary);
 }

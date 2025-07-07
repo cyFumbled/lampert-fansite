@@ -6,131 +6,31 @@
     --background: #030509;
 }
 
-.flex-column {
-    display: flex;
-    flex-direction: column;
-}
-
-.flex-row {
-    display: flex;
-    flex-direction: row;
-}
-
 .auto-margin {
-    margin: auto;
-
     outline: 4px dotted lime;
 }
 
 #lampert-image-container {
-    display: block;
-    width: 40vw;
-    min-width: 320px;
-    height: 94vh;
-    min-height: 423px;
-
-    overflow: hidden;
-
     background-color: rgb(25, 80, 62);
 }
 
 #lampert-homepage-render {
-    /* These number aren't random, they're based on image size ratio (1:1) and container size.*/
-    height: 72vh;
-    margin-top: 9vh;
-    margin-left: calc((40vw - 72vh) / 2);
-
     outline: 2px solid beige;
 }
 
 #title-container {
-    display:flex;
-    width: 60vw;
-    min-width: 480px;
-    height: 34vh;
-    min-height: 153px;
-    overflow: scroll;
-
-    margin: auto;
-
     background-color: rgb(61, 61, 236);
-
-    > * > * {
-        margin: 0;
-        outline: 2px solid beige;
-        color: rgb(247, 232, 99);
-    }
-}
-
-#title {
-    font-size: 4rem;
-    text-align: left;
-}
-
-#description {
-
-    max-width: 50vw;
-    margin-top: 0.5em;
-    
-    font-size: 2rem;
-    text-align: center;
 }
 
 #subpage-buttons-container {
-    display: flex;
-    width: 60vw;
-    min-width: 480px;
-    height: 60vh;
-    min-height: 270px;
-
-    gap: 16px;
-    overflow: scroll;
-
     background-color: rgb(17, 128, 126);
 }
 
-#subpage-button-grid {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-
-    max-width: 80%;
-    max-height: 80%;
-    gap: 36px 36px;
-    justify-content: center;
-    
-    margin: auto;
-}
-
 .subpage-button {
-    display: flex;
-    width: 28vh;
-    height: 18vh;
-    transform: scale(1);
-
-    border-radius: 48px;
     background-color: brown;
-
-    transition: transform 200ms;
 }
 
 .subpage-button:hover {
     transform: scale(1.1);
     transition: transform 100ms;
-}
-
-#page-footer {
-    display: inline-block;
-    width: 100vw;
-    min-width: 800px;
-    height: 6vh;
-    min-height: 27px;
-
-    background-color: rgb(77, 27, 82);
-}
-
-body {
-    margin: 0px;
-
-    background-color: grey;
 }
